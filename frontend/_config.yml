@@ -33,6 +33,7 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-strapi
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +54,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+strapi:
+    # Your API endpoint (optional, default to http://localhost:1337)
+    endpoint: http://localhost:1337
+    collections:
+        articles:
+            # Collection name (optional). Used to construct the url requested. Example: type `foo` would generate the following url `http://localhost:1337/foo`.
+            type: articles
